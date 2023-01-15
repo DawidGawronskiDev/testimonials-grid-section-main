@@ -152,6 +152,24 @@ article p {
 article:nth-child(1) {
   background-color: var(--mv);
   color: var(--w);
+
+  position: relative;
+}
+
+article:nth-child(1) * {
+  z-index: 999;
+}
+
+article:nth-child(1)::after {
+  position: absolute;
+  content: "";
+  top: 25.5px;
+  left: 60%;
+  background-image: url(./images/bg-pattern-quotation.svg);
+  width: 104px;
+  height: 102px;
+  transform: scale(1.5);
+  z-index: ;
 }
 
 article:nth-child(2) {
